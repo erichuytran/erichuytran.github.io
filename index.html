@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eric Huy Tran — Creative Technical & UX Designer</title>
+  <meta name="description" content="Portfolio of Eric Huy Tran, creative technical & UX designer working across UX/UI and audiovisual." />
+  <meta name="theme-color" content="#7c6ff0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    /* Apply saved theme before first paint to avoid a flash */
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Back to top">E<span>.</span>T</a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#skills">Skills</a>
+      <a href="#tools">Tools</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+      </div>
+
+      <div class="hero__content">
+        <p class="badge anim" style="--d:0ms">
+          <span class="badge__dot"></span> Available for an internship — from mid-November
+        </p>
+
+        <h1 class="hero__name anim" style="--d:100ms">Eric Huy <strong>TRAN</strong></h1>
+        <h2 class="hero__role anim" style="--d:200ms">Creative technical &amp; UX Designer</h2>
+        <p class="hero__sub anim" style="--d:300ms">UX/UI &nbsp;•&nbsp; Audiovisual</p>
+
+        <blockquote class="hero__quote anim" style="--d:400ms">
+          I’ve spent my life trying to make things simpler, because I find ultimately that complicated doesn’t reach the heart.
+          <cite>Hans Zimmer</cite>
+        </blockquote>
+
+        <div class="hero__buttons anim" style="--d:500ms">
+          <a href="#contact" class="btn btn--primary">Get in touch</a>
+          <a href="#projects" class="btn btn--ghost">See my work</a>
+        </div>
+      </div>
+
+      <ul class="hero__facts anim" style="--d:600ms">
+        <li><span>Based in</span> Limoges, France <em>→ soon Vietnam</em></li>
+        <li><span>Languages</span> French · English · Vietnamese</li>
+        <li><span>Focus</span> Design systems · Research · Sound</li>
+      </ul>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section container" id="skills">
+      <header class="section__head reveal">
+        <p class="eyebrow">What I do</p>
+        <h2>Skills</h2>
+      </header>
+
+      <div class="skills">
+        <article class="card skill reveal">
+          <h3><span class="skill__icon">◆</span> UX / UI</h3>
+          <ul class="chips">
+            <li>User Experience</li><li>UX Research</li><li>User &amp; A/B Testing</li>
+            <li>User Interface</li><li>Wireframing</li><li>Interactive Prototypes</li>
+          </ul>
+        </article>
+
+        <article class="card skill reveal" style="--d:80ms">
+          <h3><span class="skill__icon skill__icon--alt">&lt;/&gt;</span> Development</h3>
+          <ul class="chips">
+            <li>React</li><li>Angular</li><li>Java</li><li>PHP</li>
+            <li>HTML</li><li>CSS</li><li>JS</li>
+          </ul>
+        </article>
+
+        <article class="card skill reveal" style="--d:160ms">
+          <h3><span class="skill__icon">◆</span> Marketing</h3>
+          <ul class="chips">
+            <li>Brand Identity</li><li>Visual Identity</li><li>Sound Identity</li><li>Communication Strategy</li>
+          </ul>
+        </article>
+
+        <article class="card skill reveal" style="--d:240ms">
+          <h3><span class="skill__icon">◆</span> Audiovisual</h3>
+          <ul class="chips">
+            <li>Custom Music Production</li><li>Sound Design &amp; Field Recording</li>
+            <li>Video Editing</li><li>Graphic Editing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TOOLS ============ -->
+    <section class="section container" id="tools">
+      <header class="section__head reveal">
+        <p class="eyebrow">My toolbox</p>
+        <h2>Tools</h2>
+      </header>
+
+      <ul class="tools">
+        <li class="card tool reveal">
+          <span class="tool__logo" style="--c:#1d1d1f">Live</span>
+          <strong>Ableton Live 11</strong><small>Sound design</small>
+        </li>
+        <li class="card tool reveal" style="--d:60ms">
+          <span class="tool__logo" style="--c:#f24e1e">Fg</span>
+          <strong>Figma</strong><small>UX/UI design, prototyping</small>
+        </li>
+        <li class="card tool reveal" style="--d:120ms">
+          <span class="tool__logo" style="--c:#31a8ff">Ps</span>
+          <strong>Photoshop</strong><small>Raster graphics editor</small>
+        </li>
+        <li class="card tool reveal" style="--d:180ms">
+          <span class="tool__logo" style="--c:#ff9a00">Ai</span>
+          <strong>Illustrator</strong><small>Vector graphics editor</small>
+        </li>
+        <li class="card tool reveal" style="--d:240ms">
+          <span class="tool__logo" style="--c:#9999ff">Pr</span>
+          <strong>Premiere Pro</strong><small>Video editor</small>
+        </li>
+        <li class="card tool reveal" style="--d:300ms">
+          <span class="tool__logo" style="--c:#9999ff">Ae</span>
+          <strong>After Effects</strong><small>Visual effects</small>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section container" id="experience">
+      <header class="section__head reveal">
+        <p class="eyebrow">Where I’ve worked</p>
+        <h2>Experience</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>Sep 2021 – 2026</time>
+            <span>Lyon, FR</span>
+          </div>
+          <div class="job__body card">
+            <h3>UX/UI Designer Consultant</h3>
+            <p class="job__company">CGI Business Consulting</p>
+            <ul>
+              <li>High and low quality UI mockup production</li>
+              <li>UX workshops facilitation with clients, users, dev team…</li>
+              <li>Design system creation and development</li>
+              <li>Audio editing, custom music and sound design composition</li>
+              <li>Various UX missions</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>Oct 2020 – Sep 2021</time>
+            <span>Lyon, FR</span>
+          </div>
+          <div class="job__body card">
+            <h3>DevOps <small>(apprenticeship)</small></h3>
+            <p class="job__company">CGI</p>
+            <ul>
+              <li>Supervision, collection, cleaning and dataset transformation</li>
+              <li>Automatisation of recurring reports and data processing tasks</li>
+              <li>Corrective solutions development, testing and deployment (DevOps)</li>
+              <li>Data migration</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>Mar 2020 – May 2020</time>
+            <span>Paris, FR</span>
+          </div>
+          <div class="job__body card">
+            <h3>Front end developer <small>(internship)</small></h3>
+            <p class="job__company">Ferpection</p>
+            <ul>
+              <li>Front end agile programming</li>
+              <li>Website optimisation</li>
+              <li>Search engine implementation</li>
+              <li>Internal web tool design and programming</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job__meta">
+            <time>Apr 2016</time>
+            <span>Limoges, FR</span>
+          </div>
+          <div class="job__body card">
+            <h3>Audio engineer <small>(internship)</small></h3>
+            <p class="job__company">France 3</p>
+            <ul>
+              <li>Audiovisual production and post-production for the daily news broadcast</li>
+              <li>Audio field recording and on-site voice-over recording</li>
+              <li>Video editing and overall audio mixing of all television reports</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section container" id="projects">
+      <header class="section__head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Key projects</h2>
+      </header>
+
+      <div class="projects">
+        <article class="card project reveal">
+          <span class="project__logo" style="--c:#3dcd58">SE</span>
+          <h3>Dashboard conception</h3>
+          <p class="project__client">Schneider Electric</p>
+          <ul>
+            <li>Stakeholder and user centered data visualization</li>
+            <li>Dashboard and interface conception</li>
+          </ul>
+        </article>
+
+        <article class="card project reveal" style="--d:100ms">
+          <span class="project__logo" style="--c:#009fe3">Re</span>
+          <h3>UX/UI conception</h3>
+          <p class="project__client">Client project</p>
+          <ul>
+            <li>UX workshops facilitation with stakeholders and clients</li>
+            <li>Interface, dashboards and data visualisation conception</li>
+            <li>Design System development</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section container" id="education">
+      <header class="section__head reveal">
+        <p class="eyebrow">Where I studied</p>
+        <h2>Education</h2>
+      </header>
+
+      <div class="education">
+        <article class="card edu reveal">
+          <time>2021 – 2023</time>
+          <h3>Digital &amp; Marketing Strategy</h3>
+          <p>UX Specialization · Master</p>
+          <small>Digital Campus</small>
+        </article>
+        <article class="card edu reveal" style="--d:80ms">
+          <time>2020 – 2021</time>
+          <h3>Fullstack Development</h3>
+          <p>Professional license</p>
+        </article>
+        <article class="card edu reveal" style="--d:160ms">
+          <time>2018 – 2020</time>
+          <h3>Numeric System</h3>
+          <p>BTS</p>
+          <small>Lycée Turgot</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container" id="contact">
+      <div class="contact card reveal">
+        <p class="eyebrow">Let’s work together</p>
+        <h2>Looking for an internship to see the whole picture.</h2>
+        <p class="contact__text">
+          Having mainly worked in consulting, I’m looking to join a company as an intern, so I can spend more
+          time getting a 360° vision of the project and a deeper understanding of users’ pain points —
+          ensuring better and faster deliveries. I can start working mid-November.
+        </p>
+
+        <div class="contact__links">
+          <a class="btn btn--primary" href="mailto:erictran@live.fr">erictran@live.fr</a>
+          <a class="btn btn--ghost" href="tel:+33602659559">+33 6 02 65 95 59</a>
+          <!-- TODO: check this LinkedIn URL -->
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/eric-huy-tran" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Eric Huy Tran</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
